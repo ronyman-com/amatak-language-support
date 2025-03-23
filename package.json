@@ -1,0 +1,105 @@
+{
+  "name": "amatak-language-support",
+  "displayName": ".amatak",
+  "description": "Adds support for the .amatak language",
+  "version": "0.0.1",
+  "publisher": "amatak-language",
+  "engines": {
+    "vscode": "^1.98.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "icon": "icon.png",
+  "main": "./src/extension.js",
+  "activationEvents": [
+    "onLanguage:amatak",
+    "onCommand:amatak.run"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "amatak",
+        "aliases": [
+          "amatak",
+          "amatak"
+        ],
+        "extensions": [
+          ".amatak"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "amatak",
+        "scopeName": "source.amatak",
+        "path": "./syntaxes/amatak.tmLanguage.json"
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "Amatak Language Server Configuration",
+      "properties": {
+        "amatak.languageServer.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable/disable the Amatak language server."
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "amatak.run",
+        "title": "Run .amatak Script"
+      }
+    ],
+    "debuggers": [
+      {
+        "type": "amatak",
+        "label": "Amatak Debugger",
+        "program": "./debug/debugAdapter.js",
+        "runtime": "node",
+        "configurationAttributes": {
+          "request": "launch",
+          "program": {
+            "type": "string",
+            "description": "The .amatak file to debug"
+          }
+        },
+        "initialConfigurations": [
+          {
+            "type": "amatak",
+            "request": "launch",
+            "name": "Debug .amatak File",
+            "program": "${file}"
+          }
+        ]
+      }
+    ]
+  },
+  "scripts": {
+    "package": "vsce package"
+  },
+  "dependencies": {
+    "vscode-languageserver": "^9.0.1",
+    "vscode-languageserver-textdocument": "^1.0.12"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ronyman-com/amatak-language-support.git"
+  },
+  "keywords": [
+    "Amatak",
+    "vscode",
+    "Rony",
+    "MAN"
+  ],
+  "author": "Rony MAN",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ronyman-com/amatak-language-support/issues"
+  },
+  "homepage": "https://github.com/ronyman-com/amatak-language-support#readme"
+}

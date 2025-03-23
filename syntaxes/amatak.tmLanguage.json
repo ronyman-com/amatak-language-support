@@ -1,0 +1,47 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "amatak",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"name": "keyword.control.amatak",
+			"match": "\\b(let|if|else|while|function|return|print)\\b"
+		  },
+		  {
+			"name": "constant.numeric.amatak",
+			"match": "\\b\\d+\\b"
+		  },
+		  {
+			"name": "string.quoted.double.amatak",
+			"match": "\"[^\"]*\""
+		  },
+		  {
+			"name": "comment.line.amatak",
+			"match": "//.*$"
+		  }
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.amatak",
+				"match": "\\b(if|while|for|return)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.amatak",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.amatak",
+					"match": "\\\\."
+				}
+			]
+		}
+	}
+}
