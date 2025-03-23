@@ -3,7 +3,7 @@
   "displayName": ".amatak",
   "description": "Adds support for the .amatak language",
   "version": "0.0.1",
-  "publisher": "amatak-language",
+  "publisher": "amatak",
   "engines": {
     "vscode": "^1.98.0"
   },
