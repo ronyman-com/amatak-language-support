@@ -1,6 +1,6 @@
 # .amatak Language Support
 
-[![Version](https://img.shields.io/badge/version-0.0.1-blue.svg)](https://marketplace.visualstudio.com/items?itemName=your-publisher-name.amatak-language-support)
+[![Version](https://img.shields.io/badge/version-0.0.4-blue.svg)](https://marketplace.visualstudio.com/items?itemName=your-publisher-name.amatak-language-support)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 A Visual Studio Code extension that provides syntax highlighting, language server support, and debugging for `.amatak` files.
