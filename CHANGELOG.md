@@ -9,3 +9,7 @@
 
 ### [0.0.4] - 2025-03-24
 - Update package.json
+
+
+### [0.0.5] - 2025-03-25
+- Update Amatak Language The new boarn language welcome page.

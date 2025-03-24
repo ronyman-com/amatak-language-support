@@ -1,6 +1,6 @@
 # .amatak Language Support
 
-[![Version](https://img.shields.io/badge/version-0.0.4-blue.svg)](https://marketplace.visualstudio.com/items?itemName=your-publisher-name.amatak-language-support)
+[![Version](https://img.shields.io/badge/version-0.0.5-blue.svg)](https://marketplace.visualstudio.com/items?itemName=your-publisher-name.amatak-language-support)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 A Visual Studio Code extension that provides syntax highlighting, language server support, and debugging for `.amatak` files.
@@ -30,51 +30,119 @@ Alternatively, you can install the extension manually:
 
 ---
 
-## Usage
+## Welcome to Amatak: The Next Evolution of Python!
+We're thrilled to introduce Amatak, a powerful new scripting language that builds upon Python's foundation while taking developer productivity to new heights!
 
-### Syntax Highlighting
-Open any `.amatak` file, and the extension will automatically provide syntax highlighting.
+amatak-language/
+│
+├── amatak/                  # Core language implementation
+│   ├── __init__.py
+│   ├── lexer.py
+│   ├── parser.py
+│   ├── interpreter.py
+│   ├── nodes.py
+│   ├── errors.py
+│   ├── utils.py
+│   ├── stdlib/              # Standard library
+│   │   ├── __init__.py
+│   │   ├── math.py          # abs, pow, round, etc.
+│   │   ├── strings.py       # lower, upper, substring
+│   │   ├── arrays.py        # map, filter, reduce
+│   │   ├── objects.py       # Object system
+│   │   ├── fileio.py        # readFile, writeFile
+│   │   └── async.py         # Promise, fetchData
+│   └── runtime/             # Runtime components
+│       ├── scope.py         # Variable scoping
+│       ├── types.py         # Type system
+│       └── memory.py        # Memory management
+│
+├── examples/                # Example programs
+│   ├── hello.amatak         # Basic hello world
+│   ├── loops.amatak         # Loop examples
+│   ├── functions.amatak     # Function examples
+│   ├── file_io.amatak       # File operations
+│   ├── objects.amatak       # Object examples
+│   └── async.amatak         # Async programming
+│
+├── tests/                   # Test suite
+│   ├── unit/                # Unit tests
+│   │   ├── test_lexer.py
+│   │   ├── test_parser.py
+│   │   ├── test_interpreter.py
+│   │   └── test_nodes.py
+│   └── integration/         # Integration tests
+│       ├── test_stdlib/     # Stdlib tests
+│       │   ├── test_math.py
+│       │   ├── test_arrays.py
+│       │   └── test_fileio.py
+│       └── test_features/   # Feature tests
+│           ├── test_closures.py
+│           └── test_async.py
+│
+├── docs/                    # Documentation
+│   ├── README.md            # Project overview
+│   ├── syntax.md            # Language syntax
+│   ├── api/                 # API reference
+│   │   ├── stdlib.md
+│   │   └── runtime.md
+│   └── tutorials/           # Tutorials
+│       ├── basics.md
+│       ├── stdlib.md
+│       └── advanced.md
+│
+├── amatak.py                # Main CLI entry point
+├── repl.py                  # Interactive REPL
+└── requirements.txt         # Python dependencies
 
-### Language Server Features
-- **Auto-completion**: Get suggestions while typing.
-- **Error Checking**: See errors and warnings in real-time.
-- **Hover Information**: Hover over code to see additional information.
+## About Amatak
+Amatak is not just another language - it's a natural extension of Python designed to:
 
-### Debugging
-1. Open a `.amatak` file.
-2. Set breakpoints in your code.
-3. Press `F5` to start debugging.
+Maintain Python's legendary readability and simplicity
 
-### Commands
-- **Run .amatak Script**: Run the active `.amatak` file using the command `amatak.run`.
+Add modern language features developers crave
 
----
+Offer seamless interoperability with existing Python code
 
-## Configuration
+Provide enhanced performance in key areas
 
-The extension provides the following configuration options:
+Hello World in Amatak
+## Getting started is beautifully familiar:
 
-- **Enable/Disable Language Server**: Toggle the language server on or off.
-  ```json
-  "amatak.languageServer.enabled": true
 
-amatak-language-support/\
-├── icon.png\
-├── .vscode/\
-│   └── launch.json\
-├── server/\
-│   ├── server.js\
-│   └── package.json\
-├── debug/\
-│   ├── debugAdapter.js\
-│   └── debugServer.js\
-├── syntaxes/\
-│   └── amatak.tmLanguage.json\
-├── snippets/\
-│   └── amatak.json\
-├── language-configuration.json\
-├── package.json\
-├── README.md\
-└── CHANGELOG.md
+# hello.amatak
 
+`print("Hello, World! Welcome to Amatak!")`
+
+## Current Status
+✅ Core language specification complete
+
+✅ Hello World and basic syntax operational
+
+🚧 Standard library under active development
+
+🚧 Package ecosystem being built on our processing servers
+
+## What's Coming
+Our team is working hard to deliver:
+
+Full standard library compatibility
+
+Performance-optimized packages
+
+Enhanced concurrency models
+
+Advanced type system extensions
+
+# Join the Journey
+As we process and prepare Amatak's libraries and packages on our servers, we invite Python developers everywhere to:
+
+ Experiment with the core language
+
+Share your feedback
+
+Help shape Amatak's future
+
+The next chapter of Python-inspired development starts here!
+
+#Amatak #NextGenPython #HelloWorld
 
