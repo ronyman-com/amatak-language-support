@@ -1,9 +1,8 @@
-# Change Log
+# Changelog
 
-All notable changes to the "amatak-language-support" extension will be documented in this file.
-
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
-## [Unreleased]
-
-- Initial release
+## [0.0.1] - 2023-10-01
+### Added
+- Initial release of `.amatak Language Support`.
+- Syntax highlighting for `.amatak` files.
+- Language server support for auto-completion and hover information.
+- Debugging support for `.amatak` scripts.

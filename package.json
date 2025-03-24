@@ -2,7 +2,7 @@
   "name": "amatak-language-support",
   "displayName": ".amatak",
   "description": "Adds support for the .amatak language",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "amatak",
   "engines": {
     "vscode": "^1.98.0"
@@ -27,7 +27,11 @@
         "extensions": [
           ".amatak"
         ],
-        "configuration": "./language-configuration.json"
+        "configuration": "./language-configuration.json",
+        "icon": {
+          "light": "./icon.png",
+          "dark": "./icon.png"
+        }
       }
     ],
     "grammars": [
@@ -83,7 +87,8 @@
   },
   "dependencies": {
     "vscode-languageserver": "^9.0.1",
-    "vscode-languageserver-textdocument": "^1.0.12"
+    "vscode-languageserver-textdocument": "^1.0.12",
+     "vscode-languageclient": "^8.1.0"
   },
   "devDependencies": {},
   "repository": {

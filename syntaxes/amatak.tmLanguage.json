@@ -1,47 +1,43 @@
 {
-	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"name": "amatak",
+	"scopeName": "source.amatak",
+	"fileTypes": ["amatak"],
 	"patterns": [
-		{
-			"include": "#keywords"
-		},
-		{
-			"include": "#strings"
-		},
-		{
-			"name": "keyword.control.amatak",
-			"match": "\\b(let|if|else|while|function|return|print)\\b"
-		  },
-		  {
-			"name": "constant.numeric.amatak",
-			"match": "\\b\\d+\\b"
-		  },
-		  {
-			"name": "string.quoted.double.amatak",
-			"match": "\"[^\"]*\""
-		  },
-		  {
-			"name": "comment.line.amatak",
-			"match": "//.*$"
-		  }
-	],
-	"repository": {
-		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.amatak",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
-		},
-		"strings": {
-			"name": "string.quoted.double.amatak",
-			"begin": "\"",
-			"end": "\"",
-			"patterns": [
-				{
-					"name": "constant.character.escape.amatak",
-					"match": "\\\\."
-				}
-			]
-		}
-	}
-}
+	  {
+		"name": "comment.line.amatak",
+		"match": "//.*$"
+	  },
+	  {
+		"name": "comment.block.amatak",
+		"begin": "/\\*",
+		"end": "\\*/"
+	  },
+	  {
+		"name": "keyword.control.amatak",
+		"match": "\\b(let|if|else|while|function|return|print)\\b"
+	  },
+	  {
+		"name": "storage.type.function.amatak",
+		"match": "\\bfunction\\b"
+	  },
+	  {
+		"name": "entity.name.function.amatak",
+		"match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b(?=\\()"
+	  },
+	  {
+		"name": "constant.numeric.amatak",
+		"match": "\\b\\d+\\b"
+	  },
+	  {
+		"name": "string.quoted.double.amatak",
+		"match": "\"[^\"]*\""
+	  },
+	  {
+		"name": "punctuation.definition.array.amatak",
+		"match": "\\[|\\]"
+	  },
+	  {
+		"name": "punctuation.definition.block.amatak",
+		"match": "\\{|\\}"
+	  }
+	]
+  }
